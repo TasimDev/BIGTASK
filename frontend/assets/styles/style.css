@@ -741,12 +741,32 @@ header .nav-mobile.active .nav-mobile__top {
 }
 
 /*=================Services*================*/
-.services__top .container .service .service-title {
+.services {
+  margin: 5.01rem 0rem 5.44rem 0rem;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.services__top {
+  width: 100%;
+}
+.services__top .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.services__top .container .service {
   width: 25%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.services__top .container .service .service-title {
   padding: 1.56rem;
+  height: 16.9375rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1.75575rem;
   flex-shrink: 0;
@@ -776,7 +796,7 @@ header .nav-mobile.active .nav-mobile__top {
   text-align: center;
   font-size: 1rem;
 }
-.services__top .container .service .service-title a {
+.services__top .container .service .service-title .btn {
   display: flex;
   padding: 0.3125rem 0.9375rem;
   border-radius: 2.06413rem;
@@ -786,11 +806,123 @@ header .nav-mobile.active .nav-mobile__top {
   gap: 0.9rem;
   flex-direction: row-reverse;
 }
-.services__top .container .service .service-title a .text {
+.services__top .container .service .service-title .btn .text {
   color: #63C7C9;
   font-size: 1.125rem;
   font-weight: 700;
 }
+.services__top .container .service.service-2 .service-title {
+  border: 2px solid #DC5426;
+  background: #DC5426;
+}
+.services__top .container .service.service-2 .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.services__top .container .service.service-2 .buttons .btn .text {
+  color: #DC5426;
+}
+.services__top .container .service.service-2 .buttons .small-link {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.services__top .container .service.service-3 .service-title {
+  border: 2px solid #E59D48;
+  background: #E59D48;
+}
+.services__top .container .service.service-3 .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.services__top .container .service.service-3 .buttons .btn .text {
+  color: #E59D48;
+}
+.services__top .container .service.service-3 .buttons .small-link {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.services__top .container .service.service-4 .service-title {
+  border: 2px solid #BD5FE9;
+  background: #BD5FE9;
+}
+.services__top .container .service.service-4 .btn .text {
+  color: #BD5FE9;
+}
+.services__bottom {
+  width: 100%;
+}
+.services__bottom .container {
+  display: flex;
+  gap: 2rem;
+}
+.services__bottom .container .service {
+  display: flex;
+  width: 23%;
+  padding: 0.9375rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  border-radius: 1.5625rem;
+  border: 2px solid #DC5426;
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.services__bottom .container .service .service-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.62rem;
+}
+.services__bottom .container .service .service-title .icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.services__bottom .container .service .service-title .text {
+  color: #DC5426;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.services__bottom .container .service .service-info {
+  align-self: stretch;
+  color: #999;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.services__bottom .container .service.service-2 {
+  border: 2px solid #5FB865;
+}
+.services__bottom .container .service.service-2 .service-title .text {
+  color: #5FB865;
+}
+.services__bottom .container .service.service-3 {
+  border: 2px solid #008AEE;
+}
+.services__bottom .container .service.service-3 .service-title .text {
+  color: #008AEE;
+}
+.services__bottom .container .service.service-4 {
+  border: 2px solid #0043EE;
+}
+.services__bottom .container .service.service-4 .service-title .text {
+  color: #0043EE;
+}
+
 /*==============Fotter==============*/
 #footer {
   width: 100%;
@@ -991,6 +1123,20 @@ header .nav-mobile.active .nav-mobile__top {
   #footer .container .footer_items {
     width: 80%;
   }
+  .services__top .container {
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  .services__top .container .service {
+    width: 40%;
+  }
+  .services__bottom .container {
+    width: 80%;
+    flex-direction: column;
+  }
+  .services__bottom .container .service {
+    width: 100%;
+  }
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -1061,6 +1207,14 @@ header .nav-mobile.active .nav-mobile__top {
   }
   #info .info-container .info-item:nth-child(4) {
     flex-direction: row-reverse;
+  }
+  .services__top .container {
+    flex-wrap: nowrap;
+    width: 80%;
+    flex-direction: column;
+  }
+  .services__top .container .service {
+    width: 100%;
   }
 }
 /* 

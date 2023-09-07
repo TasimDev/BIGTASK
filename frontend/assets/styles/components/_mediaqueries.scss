@@ -125,6 +125,34 @@
             }
         }
     }
+
+    .services {
+
+
+        &__top {
+
+            .container {
+                flex-wrap: wrap;
+                width: 70%;
+
+                .service {
+                    width: 40%;
+                }
+            }
+        }
+
+        &__bottom {
+            .container {
+                width: 80%;
+                flex-direction: column;
+
+                .service {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
 }
 
 /* 
@@ -242,7 +270,22 @@
         }
     }
 
+    .services {
 
+        &__top {
+
+            .container {
+                flex-wrap: nowrap;
+                width: 80%;
+                flex-direction: column;
+
+                .service {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
 }
 
 /* 
