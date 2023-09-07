@@ -46,6 +46,8 @@
     }
 
     #search {
+        padding: 150px 1rem 1.56rem 1rem;
+
         .filters {
             display: none;
 
@@ -71,6 +73,54 @@
             gap: 2rem;
 
             .info-item {
+                width: 80%;
+            }
+        }
+    }
+
+    #autoparts-section {
+        padding: 0rem 3rem;
+
+        .container {
+            flex-direction: column;
+
+            .autoparts-title {
+                width: 100%;
+            }
+
+            .slideshow-wrapper {
+                width: 100%;
+            }
+        }
+
+    }
+
+    #autoborsa-section {
+        padding: 0rem 3rem;
+
+        .container {
+            flex-direction: column;
+
+            .autoborsa-title {
+                width: 100%;
+            }
+
+            .slideshow-wrapper {
+                width: 100%;
+            }
+        }
+
+    }
+
+    #footer {
+        padding: 2.19rem 0rem 5.3rem 0rem;
+
+        .container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .footer_items {
                 width: 80%;
             }
         }

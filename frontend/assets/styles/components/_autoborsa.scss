@@ -1,0 +1,144 @@
+/*=================Autoborsa================*/
+#autoborsa-section {
+    margin-top: 5.1rem;
+
+    .container {
+        gap: 2rem;
+        flex-direction: row-reverse;
+
+        .autoborsa-title {
+            width: 25%;
+            padding: 1.56rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75575rem;
+            flex-shrink: 0;
+
+
+            border-radius: 1.5625rem;
+            border: 2px solid color(--green);
+            background: color(--green);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.3125rem;
+
+                img {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+
+                .text {
+                    color: #FFF;
+                    font-size: 1.625rem;
+                    font-weight: 700;
+                }
+            }
+
+            .info {
+                align-self: stretch;
+                color: #EDEDED;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            a {
+
+                display: flex;
+                padding: 0.3125rem 0.9375rem;
+                border-radius: 2.06413rem;
+                background: #FFF;
+                align-items: center;
+                justify-content: center;
+                gap: .9rem;
+                flex-direction: row-reverse;
+
+
+
+                .text {
+                    color: color(--green);
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                }
+            }
+        }
+
+
+        .slideshow-wrapper {
+            width: 75%;
+
+
+            .title {
+                color: color(--bg-primary-color);
+                font-size: 1.125rem;
+                font-weight: 700;
+                align-self: self-start;
+                margin-bottom: 1rem;
+            }
+
+            .slideshow {
+                width: 100%;
+                flex-direction: column;
+                gap: 0.95rem;
+                overflow-x: auto;
+                scroll-snap-align: start;
+                scroll-behavior: smooth;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+
+                .slider-container {
+
+                    display: flex;
+                    gap: 2rem;
+
+
+
+
+                    align-self: self-start;
+
+                    .product {
+                        .image {
+                            width: 16.9375rem;
+                        }
+
+                        .product-name {
+                            h2 {
+                                color: color(--bg-primary-color);
+                                font-size: 0.913rem;
+                                font-weight: 700;
+
+                                .text-green {
+                                    color: color(--green);
+                                    font-size: 1rem;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    text-transform: uppercase;
+                                }
+
+                                .text-blue {
+                                    color: color(--primary-color);
+                                    font-size: 1rem;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
