@@ -1,0 +1,203 @@
+/*=====================MediaQueries==================*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 1200px) {
+    header {
+        .nav {
+            padding: 1rem;
+
+
+
+            &__frame {
+                display: none;
+            }
+        }
+
+        .mobile-nav-btn {
+            display: flex;
+        }
+
+        .nav-bottom {
+            .container {
+                .arrow {
+                    background: transparent;
+
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .nav-mobile {
+            &__top {
+                .megatext {
+                    display: none;
+                }
+            }
+
+            &__bottom {
+                display: flex;
+            }
+        }
+    }
+
+    #search {
+        .filters {
+            display: none;
+
+        }
+
+        .container {
+            .wrapper {
+                .search-form {
+                    .buttons {
+                        .filters-btn {
+                            display: block;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    #info {
+        .info-container {
+            gap: 2rem;
+
+            .info-item {
+                width: 80%;
+            }
+        }
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (max-width: 540px) {
+    header {
+        .nav {
+            &__title {
+                .megatext {
+                    display: none;
+                }
+
+                .logo {
+                    img {
+                        width: 12rem;
+                        height: 2rem;
+                    }
+                }
+            }
+
+            &__line {
+                display: none
+            }
+        }
+
+        .nav-mobile {
+            &__top {
+                .megatext {
+                    display: flex;
+                }
+            }
+        }
+
+        .mobile-nav-btn {
+            height: 1.4rem;
+
+            .line {
+                height: 3px;
+            }
+        }
+    }
+
+    #search {
+        padding: 150px 1rem 1.56rem 1rem;
+
+        .container {
+            .wrapper {
+                padding: 1.2rem 1.5rem;
+                gap: 1rem;
+
+                .search__title {
+                    .text {
+                        font-size: 1.3rem;
+                    }
+
+                    .icon {
+                        img {
+                            width: 1rem;
+                            height: 1rem;
+                        }
+                    }
+                }
+
+                .search-form {
+                    flex-direction: column;
+
+                    .search-input {
+                        padding: .5rem 1rem;
+                        align-self: self-start;
+
+                        &::placeholder {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .buttons {
+                        width: 100%;
+                        align-self: self-start;
+                        justify-content: space-between;
+
+                        .filters-btn {
+                            width: 1rem;
+                            height: 1rem;
+                        }
+
+                        .search-btn {
+                            padding: .5rem 1rem;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    #info {
+        .info-container {
+
+
+
+            .info-item {
+                &:nth-child(2) {
+                    flex-direction: row-reverse;
+                }
+
+                &:nth-child(4) {
+                    flex-direction: row-reverse;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) {}

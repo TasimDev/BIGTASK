@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style.css-->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!--JQueery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <title>АВТОЧАСТИ MEGAPARTS - Магазин за авточасти</title>
+</head>
+
+<body>
+    <Navbar></Navbar>
+    <!--SERACH-->
+    <section id="search">
+        <div class="container">
+            <div class="wrapper">
+                <div class="search__title flex">
+                    <div class="icon"><img src="../frontend/assets/images/search-images/search-icon.svg"
+                            alt="search/svg"></div>
+                    <span class="text">Бързо търсене</span>
+                </div>
+
+                <form action="#" class="search-form">
+                    <input type="text" name="searchbar" id="searchbar" class="search-input"
+                        placeholder="Търсете на Част, марка, категория, обява или др.">
+                    <div class="buttons flex">
+                        <div class="filters-btn">
+                            <img src="../frontend/assets/images/search-images/filter-icon.svg" alt="filte/svf">
+                        </div>
+                        <button type="submit" class="search-btn">Търсене</button>
+                    </div>
+                </form>
+                <ul class="filters flex">
+                    <li><a href="#" class="filter" id="all-filter">Всичко</a></li>
+                    <li><a href="#" class="filter" id="autoparts-filter">Авточасти</a></li>
+                    <li><a href="#" class="filter" id="borsaparts-filter">Борса Части</a></li>
+                    <li><a href="#" class="filter" id="autoborsa-filter">Автоборса</a></li>
+                    <li><a href="#" class="filter" id="sellcars-filter">Продава Коли</a></li>
+                    <li><a href="#" class="filter" id="sellparts-filter">Продава Части</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="slide-show">
+        <div class="slider-wrapper">
+            <div class="slider-nav">
+                <a href="#slide-1" class="dot active"></a>
+                <a href="#slide-2" class="dot"></a>
+                <a href="#slide-3" class="dot"></a>
+                <a href="#slide-4" class="dot"></a>
+            </div>
+            <div class="slider">
+                <img id="slide-1" src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                <img id="slide-2" src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                <img id="slide-3" src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                <img id="slide-4" src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+            </div>
+
+
+        </div>
+    </section>
+    <div id="info">
+        <div class="container info-container ">
+            <div class="info-item">
+                <div class="image"><img src="../frontend/assets/images/info-images/info-image-1.svg" alt="info-image-1"
+                        class="info-image"></div>
+                <div class="info-text">
+                    <div class="title">Експресна доставка</div>
+                    <span class="text">Доставяме до всяка точка на България.</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="image"><img src="../frontend/assets/images/info-images/info-image-2.svg" alt="info-image-2"
+                        class="info-image"></div>
+                <div class="info-text">
+                    <div class="title">Нови части всеки ден</div>
+                    <span class="text">Ежедневно зареждаме нова стока.</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="image"><img src="../frontend/assets/images/info-images/info-image-3.svg" alt="info-image-3"
+                        class="info-image"></div>
+                <div class="info-text">
+                    <div class="title">Проверено качество</div>
+                    <span class="text">Авточасти с гаранция.</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="image"><img src="../frontend/assets/images/info-images/info-image-4.svg" alt="info-image-4"
+                        class="info-image"></div>
+                <div class="info-text">
+                    <div class="title">Право на връщане</div>
+                    <span class="text">14 дни право на връщане на всяка поръчка.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="autoparts-section">
+        <div class="container flex">
+            <div class="autoparts-title">
+                <div class="title">
+                    <img src="../frontend/assets/images/autoparts-section-images/title-image.svg"
+                        alt="autoparts-title/svg">
+                    <span class="text">Авточасти</span>
+                </div>
+                <p class="info">Най-големия онлайн магазин за авточасти в България!</p>
+                <a href="#">
+                    <img src="../frontend/assets/images/autoparts-section-images/right-vector.svg" alt="">
+                    <span class="text">Разгледай</span>
+                </a>
+            </div>
+            <div class="slideshow-wrapper">
+                <div class="title">Специални предложения:</div>
+                <div class="slideshow flex">
+                    <div class="slider-container ">
+                        <div class="product">
+                            <div class="image">
+                                <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                    alt="imag-1/png">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-name">
+                                    <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                </div>
+                                <div class="product-price flex">
+                                    <div class="product-cat">Кат. №: s_167232784</div>
+                                    <div class="price">967.70 лв.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="image">
+                                <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                    alt="imag-1/png">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-name">
+                                    <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                </div>
+                                <div class="product-price">
+                                    <div class="product-cat">Кат. №: s_167232784</div>
+                                    <div class="price">967.70 лв.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="image">
+                                <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                    alt="imag-1/png">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-name">
+                                    <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                </div>
+                                <div class="product-price">
+                                    <div class="product-cat">Кат. №: s_167232784</div>
+                                    <div class="price">967.70 лв.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="image">
+                                <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                    alt="imag-1/png">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-name">
+                                    <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                </div>
+                                <div class="product-price">
+                                    <div class="product-cat">Кат. №: s_167232784</div>
+                                    <div class="price">967.70 лв.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Footer></Footer>
+    <!--Script.js-->
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

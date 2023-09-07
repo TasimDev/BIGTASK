@@ -1,0 +1,45 @@
+/*====================Info=================*/
+#info {
+    padding: 1.56rem 0rem 2.63rem 0rem;
+
+    .info-container {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .info-item {
+            width: 25%;
+            gap: 0.94rem;
+
+            display: flex;
+
+            .image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3.5rem;
+                height: 3.5rem;
+
+            }
+
+            .info-text {
+                gap: 0.5rem;
+
+                .title {
+                    color: color(--bg-primary-color);
+                    font-size: 0.8125rem;
+                    font-weight: 700;
+                }
+
+                .text {
+                    color: #777;
+                    font-family: Exo 2;
+                    font-size: 0.8125rem;
+                    font-weight: 500;
+
+                }
+            }
+        }
+    }
+}

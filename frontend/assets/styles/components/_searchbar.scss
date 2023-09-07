@@ -1,0 +1,135 @@
+/*==============SearchBar==============*/
+#search {
+    padding-top: 150px;
+    padding-bottom: 1.56rem;
+    background: color(--primary-color);
+
+    .container {
+        margin-top: 1.56rem;
+
+        .wrapper {
+
+            padding: 1.25rem 1.56rem;
+            border-radius: 1.56rem;
+            background: #FEFEFE;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.56rem;
+
+            .search__title {
+                justify-content: start;
+                align-items: center;
+                gap: 0.94rem;
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    img {
+                        width: 1.125rem;
+                        height: 1.125rem;
+                    }
+                }
+
+                .text {
+                    color: color(--bg-primary-color);
+                    font-size: 1.625rem;
+                    font-weight: 700;
+                }
+            }
+
+            .search-form {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1.2rem;
+
+                .search-input {
+                    width: 100%;
+                    padding: 1rem;
+                    border-radius: 1.5625rem;
+                    border: 1px solid color(--primary-color);
+                    font-size: 1.25rem;
+                    font-family: var(--body-font);
+
+                    &::placeholder {
+                        font-family: var(--body-font);
+                    }
+                }
+
+                .buttons {
+                    gap: 0.6rem;
+
+                    .filters-btn {
+                        display: none;
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        flex-shrink: 0;
+                        cursor: pointer;
+                    }
+
+                    .search-btn {
+                        width: 167px;
+                        padding: 0.78125rem 1.875rem;
+                        border-radius: 1.5625rem;
+                        background: color(--primary-color);
+                        font-size: 1.625rem;
+                        color: color(--text-white);
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            .filters {
+                gap: 0.63rem;
+
+                li {
+                    .filter {
+                        padding: 0.38rem 1.38rem;
+                        font-size: 1.125rem;
+                        color: color(--bg-primary-color);
+                        font-weight: 500;
+
+                        border-radius: 1.5625rem;
+                    }
+
+                    #all-filter {
+                        background: color(--primary-color);
+                        color: color(--text-white);
+                        border: 1px solid color(--primary-color);
+                    }
+
+                    #autoparts-filter {
+                        border: 1px solid color(--primary-color);
+
+                    }
+
+                    #borsaparts-filter {
+                        border: 1px solid color(--green);
+                    }
+
+                    #autoborsa-filter {
+                        border: 1px solid color(--ocean-green);
+                    }
+
+                    #sellcars-filter {
+                        border: 1px solid color(--orange);
+                    }
+
+                    #sellparts-filter {
+                        border: 1px solid color(--yellow);
+                    }
+                }
+
+            }
+
+        }
+    }
+}

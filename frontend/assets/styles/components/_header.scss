@@ -1,0 +1,381 @@
+/*===========HHEADER - NAVBAR=============*/
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+
+    /*============nav-top============*/
+    .nav {
+        background: color(--bg-primary-color);
+        padding: 0.95rem 6px;
+
+        &__container {
+            justify-content: space-between;
+        }
+
+        &__line {
+            width: 0.0625rem;
+            height: 2rem;
+            background-color: color(--bg-line);
+        }
+
+        &__title {
+            .logo {
+
+                padding-right: 1.56rem;
+
+                img {
+                    width: 13.57731rem;
+                    height: 2.20756rem;
+                }
+            }
+
+            .megatext {
+                padding-left: 1.56rem;
+                text-transform: uppercase;
+                gap: 1.25rem;
+                color: color(--text-white);
+                font-weight: 900;
+                font-style: italic;
+                font-size: 1.25rem;
+                opacity: 0.6;
+
+                .megacars {
+                    span {
+                        color: color(--orange);
+                    }
+                }
+
+                .megad {
+                    span {
+                        color: color(--yellow);
+                    }
+                }
+            }
+        }
+
+        &__frame {
+
+
+            .icons {
+                gap: 0.94rem;
+                margin-right: 1.56rem;
+
+                icon {
+                    img {
+                        width: 1.375rem;
+                    }
+                }
+            }
+
+            .profile {
+
+                a {
+                    color: color(--text-white);
+                    gap: 0.62rem;
+
+                    img {
+                        width: 0.72888rem;
+                        height: 0.9375rem
+                    }
+
+                    .text {
+                        font-size: 1.25rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .socials {
+                gap: 0.75rem;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+
+
+            }
+
+            .profile,
+            .socials {
+                margin: 0 1.56rem;
+            }
+
+            .phone {
+                margin-left: 1.56rem;
+
+
+                a {
+                    gap: 0.31rem;
+                    color: color(--text-white);
+
+                    img {
+                        width: 1.12481rem;
+                        height: 1.125rem;
+                        flex-shrink: 0;
+                    }
+
+                    .text {
+                        font-size: 1.25rem;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+        }
+    }
+
+    /*============nav-botom==============*/
+    .nav-bottom {
+        background: color(--bg-secondary-color);
+        padding: 1.25rem 6px;
+
+        .container {
+            position: relative;
+            overflow-x: auto;
+        }
+
+        .container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .nav-bottom-menu {
+            gap: 0.94rem;
+            width: max-content;
+
+
+            li {
+                .btn {
+                    padding: 0.3125rem 0.9375rem;
+                    background: color(--primary-color);
+                    border-radius: 1.5625rem;
+                    gap: 0.62rem;
+                    align-items: center;
+
+                    img {
+                        width: 1.04538rem;
+                        height: 0.9375rem;
+                        display: flex;
+                        margin-bottom: 1.1px;
+                    }
+
+                    .text {
+                        color: color(--text-white);
+                        font-size: 1.125rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+
+                    &#home {
+                        padding: 0.5rem 0.9375rem;
+                    }
+
+                    &#partexchange {
+                        background: color(--green);
+                    }
+
+                    &#autoborsa {
+                        background: color(--ocean-green);
+                    }
+
+                    &#sellcars {
+                        background: color(--orange);
+                    }
+
+                    &#sellparts {
+                        background: color(--yellow);
+                    }
+
+                    &#games {
+                        background: color(--purple);
+                    }
+
+                    &#insurance {
+                        background: none;
+                        border: 1.5px solid color(--orange);
+                    }
+                }
+
+            }
+        }
+
+        .arrow {
+            width: 50px;
+            height: 100%;
+            background: red;
+            position: absolute;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: .6rem;
+            }
+        }
+
+        .arrow.arrow-right {
+            justify-content: right;
+            top: 0;
+            right: 0;
+            background: linear-gradient(97deg, rgba(40, 116, 183, 0) 7%, color(--bg-secondary-color) 60%);
+            display: none;
+        }
+
+        .arrow.arrow-left {
+            display: none;
+            background: linear-gradient(270deg, rgba(40, 116, 183, 0) 7%, color(--bg-secondary-color) 80%);
+
+            img {
+                transform: rotate(-180deg);
+            }
+        }
+
+        .arrow.arrow-left.active,
+        .arrow.arrow-right.active {
+            display: flex;
+        }
+
+
+    }
+
+    /*===========nav-mobile============*/
+    .mobile-nav-btn {
+        width: 2rem;
+        height: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        cursor: pointer;
+        display: none;
+
+        .line {
+            width: 100%;
+            height: 3.6px;
+            background: color(--text-white);
+            border-radius: 15px;
+
+            &:nth-child(1) {
+                width: 80%;
+            }
+
+            &:nth-child(3) {
+                width: 50%;
+            }
+        }
+
+
+    }
+
+    .nav-mobile {
+        &__top {
+            background: color(--bg-primary-color);
+            flex-direction: column;
+            padding: 1.2rem 0;
+            display: none;
+
+            .megatext {
+                width: 100%;
+                text-transform: uppercase;
+                justify-content: space-evenly;
+                color: color(--text-white);
+                font-weight: 900;
+                font-style: italic;
+                font-size: .85rem;
+                opacity: 0.6;
+
+                .megacars {
+                    span {
+                        color: color(--orange);
+                    }
+                }
+
+                .megad {
+                    span {
+                        color: color(--yellow);
+                    }
+                }
+            }
+
+            .megasocials {
+                width: 100%;
+                justify-content: space-evenly;
+
+                .socials {
+                    margin-left: 2.6rem;
+                }
+
+                .phone {
+                    margin-right: 1.2rem;
+
+                    a {
+                        gap: 0.31rem;
+                        color: color(--text-white);
+
+                        img {
+                            width: 1.12481rem;
+                            height: 1.125rem;
+                            flex-shrink: 0;
+                        }
+
+                        .text {
+                            font-size: 1.25rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__bottom {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: color(--text-white);
+
+            border-top: 1.5px solid rgba(167, 167, 167, 0.295);
+            padding: 1.3rem 0;
+            display: none;
+
+            .icons {
+                width: 60%;
+                gap: 3.6rem;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 1.6rem;
+                    }
+                }
+
+                #profile {
+                    img {
+                        width: 1.3rem;
+                    }
+                }
+
+
+
+            }
+
+        }
+    }
+
+    .nav-mobile.active {
+        .nav-mobile__top {
+            display: block;
+        }
+    }
+}

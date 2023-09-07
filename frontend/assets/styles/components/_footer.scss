@@ -1,0 +1,155 @@
+/*==============Fotter==============*/
+
+#footer {
+    width: 100%;
+    background-color: color(--bg-secondary-color);
+
+    .container {
+        display: flex;
+        gap: 2rem;
+        padding: 2.19rem 0rem 5rem 0rem;
+
+        .footer_items.item1 {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            background: none;
+
+
+            .list_item {
+                width: 100%;
+                padding: 0.9375rem;
+                background: color(--bg-primary-color);
+                border-radius: 0.625rem;
+            }
+
+            .button {
+                width: 100%;
+                padding: 0.9375rem;
+                background: color(--bg-primary-color);
+                border-radius: 0.625rem;
+                text-align: center;
+
+                li a {
+                    color: #5FB865;
+                    font-family: Exo 2;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+
+
+
+        .footer_items {
+            display: flex;
+            flex-direction: column;
+            padding: 0.9375rem;
+            align-items: flex-start;
+            gap: 0.94rem;
+            border-radius: 0.625rem;
+            background: #19242D;
+            width: 25%;
+
+            .list_item {
+                display: flex;
+                flex-direction: column;
+                gap: 0.94rem;
+
+                h1 {
+                    color: #FFF;
+                    font-family: Exo 2;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                h2 {
+                    color: #FFF;
+                    font-family: Exo 2;
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    .mega_span {
+                        color: #FFF;
+                        font-family: Roboto;
+                        font-size: 0.875rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+
+        .footer_items.item4 {
+            display: flex;
+            align-items: center;
+
+            .list_item {
+
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .list-title {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    img {
+                        width: 13.57731rem;
+                        height: 2.20756rem;
+                    }
+
+                    span {
+                        color: #999;
+                        text-align: center;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                    }
+                }
+
+                .megatext {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.62rem;
+
+                    .mega {
+                        h2 {
+                            font-size: 1.5625rem;
+                            font-style: italic;
+                            font-weight: 900;
+                            line-height: normal;
+                            opacity: 0.6;
+                        }
+                    }
+
+                    .megacars {
+                        .text {
+                            color: color(--orange);
+                        }
+                    }
+
+                    .megad {
+                        .text {
+                            color: color(--yellow);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
