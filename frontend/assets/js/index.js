@@ -19,3 +19,4 @@ dots.forEach((dot) => {
         dot.className += ' active';
     })
 })
+

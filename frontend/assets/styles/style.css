@@ -923,6 +923,48 @@ header .nav-mobile.active .nav-mobile__top {
   color: #0043EE;
 }
 
+/*============MAp*================*/
+#map {
+  margin-bottom: 7.44rem;
+}
+#map .container .image-container {
+  position: relative;
+}
+#map .container .image-container .vector-container {
+  position: absolute;
+}
+#map .container .image-container .vector-container .vector {
+  width: 6vmin;
+  height: 6vmin;
+  border-radius: 50%;
+  background: #008AEE;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.3));
+  padding: 1vmin;
+}
+#map .container .image-container .vector-container .vector::after {
+  content: "";
+  width: 2vmin;
+  height: 2vmin;
+  background: #008AEE;
+  position: absolute;
+  bottom: -1vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+#map .container .image-container .vector-container#sofia {
+  top: 36%;
+  left: 13.9%;
+}
+#map .container .image-container .vector-container#varna {
+  display: flex;
+  justify-content: end;
+  align-self: flex-end;
+  top: 22.1%;
+  right: 8.8%;
+}
+
 /*==============Fotter==============*/
 #footer {
   width: 100%;

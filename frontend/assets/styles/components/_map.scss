@@ -1,0 +1,52 @@
+/*============MAp*================*/
+#map {
+
+    margin-bottom: 7.44rem;
+
+    .container {
+        .image-container {
+            position: relative;
+
+            .vector-container {
+                position: absolute;
+
+
+                .vector {
+                    width: 6vmin;
+                    height: 6vmin;
+                    border-radius: 50%;
+                    background: color(--primary-color);
+                    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.30));
+                    padding: 1vmin;
+
+                    &::after {
+                        content: '';
+                        width: 2vmin;
+                        height: 2vmin;
+                        background: color(--primary-color);
+                        position: absolute;
+                        bottom: -1vmin;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        clip-path: polygon(50% 100%, 0 0, 100% 0);
+                    }
+                }
+
+                &#sofia {
+                    top: 36%;
+                    left: 13.9%;
+                }
+
+                &#varna {
+                    display: flex;
+                    justify-content: end;
+                    align-self: flex-end;
+
+                    top: 22.1%;
+                    right: 8.8%;
+                }
+            }
+
+        }
+    }
+}
