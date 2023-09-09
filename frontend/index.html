@@ -50,20 +50,23 @@
         </div>
     </section>
     <section id="slide-show">
-        <div class="slider-wrapper">
-            <div class="slider-nav">
-                <a href="#slide-1" class="dot active"></a>
-                <a href="#slide-2" class="dot"></a>
-                <a href="#slide-3" class="dot"></a>
-                <a href="#slide-4" class="dot"></a>
+        <div class="swiper mySwiper" id="swiper-image">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                </div>
             </div>
-            <div class="slider">
-                <img id="slide-1" src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
-                <img id="slide-2" src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
-                <img id="slide-3" src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
-                <img id="slide-4" src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
-            </div>
-
+            <div class="swiper-pagination" id="swiper-pagination-image"></div>
+        </div>
 
         </div>
     </section>
@@ -119,101 +122,122 @@
             </div>
             <div class="slideshow-wrapper">
                 <div class="title">Специални предложения:</div>
-                <div class="slideshow flex">
-                    <div class="slider-container ">
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                <div class="swiper" id="autoparts-swipper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                        alt="imag-1/png">
                                 </div>
-                                <div class="product-price flex">
-                                    <div class="product-cat">Кат. №: s_167232784</div>
-                                    <div class="price">967.70 лв.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
-                                </div>
-                                <div class="product-price">
-                                    <div class="product-cat">Кат. №: s_167232784</div>
-                                    <div class="price">967.70 лв.</div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                        alt="imag-1/png">
                                 </div>
-                                <div class="product-price">
-                                    <div class="product-cat">Кат. №: s_167232784</div>
-                                    <div class="price">967.70 лв.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
-                                </div>
-                                <div class="product-price">
-                                    <div class="product-cat">Кат. №: s_167232784</div>
-                                    <div class="price">967.70 лв.</div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                        alt="imag-1/png">
                                 </div>
-                                <div class="product-price">
-                                    <div class="product-cat">Кат. №: s_167232784</div>
-                                    <div class="price">967.70 лв.</div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                        alt="imag-1/png">
                                 </div>
-                                <div class="product-price">
-                                    <div class="product-cat">Кат. №: s_167232784</div>
-                                    <div class="price">967.70 лв.</div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                        alt="imag-1/png">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                        alt="imag-1/png">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-btn" id="swiper-btn">
+                        <div class="swiper-button-next" id="swipper-button-next-autoparts"></div>
+                    </div>
+                    <div class="swiper-btn" id="swiper-btn">
+                        <div class="swiper-button-prev" id="swipper-button-prev-autoparts"></div>
+                    </div>
+
                 </div>
             </div>
+
+        </div>
         </div>
     </section>
     <section id="autoborsa-section">
@@ -232,82 +256,111 @@
             </div>
             <div class="slideshow-wrapper">
                 <div class="title">Последни оферти и запитвания:</div>
-                <div class="slideshow flex">
-                    <div class="slider-container ">
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2><span class="text-green">КУПУВАМ</span> Фар за Audi A5 Coupe I (06.2007 -
-                                        01.2017)</h2>
+                <div class="swiper" id="autoborsa-swipper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                        alt="imag-1/png">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2><span class="text-blue">Оферта за</span> Фар за Audi A5 Coupe I (06.2007 -
-                                        01.2017)</h2>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                        alt="imag-1/png">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2><span class="text-green">КУПУВАМ</span> Фар за Audi A5 Coupe I (06.2007 -
-                                        01.2017)</h2>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                        alt="imag-1/png">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2><span class="text-blue">Оферта за</span> Фар за Audi A5 Coupe I (06.2007
-                                        -
-                                        01.2017)</h2>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                        alt="imag-1/png">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2><span class="text-green">КУПУВАМ </span>Фар за Audi A5 Coupe I (06.2007 -
-                                        01.2017)</h2>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                        alt="imag-1/png">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="image">
-                                <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
-                                    alt="imag-1/png">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-name">
-                                    <h2><span class="text-blue">Оферта за</span> Фар за Audi A5 Coupe I (06.2007 -
-                                        01.2017)</h2>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                        alt="imag-1/png">
                                 </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h2>Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</h2>
+                                    </div>
+                                    <div class="product-price flex">
+                                        <div class="product-cat">Кат. №: s_167232784</div>
+                                        <div class="price">967.70 лв.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -443,7 +496,14 @@
         </div>
     </section>
     <section id="testominals">
-
+        <div class="container testominals_container flex">
+            <div class="swiper mySwiper" id="testominalSwiper">
+                <div class="swiper-wrapper" id="swaper-wrapper-testominals">
+                    <!--Testominals-->
+                </div>
+                <div class="swiper-pagination " id="swiper-testominal-pagination"></div>
+            </div>
+        </div>
     </section>
     <div id="map">
         <div class="container">
@@ -463,6 +523,7 @@
     <Footer></Footer>
     <!--Script.js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/testominal.js"> </script>
     <script src="./assets/js/index.js"></script>
 
 </body>

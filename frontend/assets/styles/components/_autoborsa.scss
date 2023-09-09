@@ -71,7 +71,7 @@
 
         .slideshow-wrapper {
             width: 75%;
-
+            position: relative;
 
             .title {
                 color: color(--bg-primary-color);
@@ -81,32 +81,18 @@
                 margin-bottom: 1rem;
             }
 
-            .slideshow {
-                width: 100%;
-                flex-direction: column;
-                gap: 0.95rem;
-                overflow-x: auto;
-                scroll-snap-align: start;
-                scroll-behavior: smooth;
 
-                &::-webkit-scrollbar {
-                    display: none;
-                }
+            .swiper-wrapper {
 
-
-                .slider-container {
-
+                .swiper-slide {
                     display: flex;
                     gap: 2rem;
-
-
-
-
                     align-self: self-start;
+
 
                     .product {
                         .image {
-                            width: 16.9375rem;
+                            width: 100%;
                         }
 
                         .product-name {
@@ -114,28 +100,28 @@
                                 color: color(--bg-primary-color);
                                 font-size: 0.913rem;
                                 font-weight: 700;
+                            }
+                        }
 
-                                .text-green {
-                                    color: color(--green);
-                                    font-size: 1rem;
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    line-height: normal;
-                                    text-transform: uppercase;
-                                }
+                        .product-price {
+                            justify-content: space-between;
 
-                                .text-blue {
-                                    color: color(--primary-color);
-                                    font-size: 1rem;
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    line-height: normal;
-                                    text-transform: uppercase;
-                                }
+                            .product-cat {
+                                color: #999;
+                                font-size: 0.78256rem;
+                                font-weight: 400;
+                            }
+
+                            .price {
+                                color: #5FB865;
+                                text-align: right;
+                                font-size: 1rem;
+                                font-weight: 700;
                             }
                         }
                     }
                 }
+
             }
         }
 

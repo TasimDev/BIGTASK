@@ -260,16 +260,42 @@ header {
             background: color(--text-white);
             border-radius: 15px;
 
+
             &:nth-child(1) {
                 width: 80%;
+                transition: all .6s ease-in-out;
+            }
+
+            &:nth-child(2) {
+                transition: all .3s ease-in-out;
             }
 
             &:nth-child(3) {
                 width: 50%;
+                transition: all .6s ease-in-out;
             }
         }
 
 
+    }
+
+    .mobile-nav-btn.active {
+        .line {
+            &:nth-child(2) {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            &:nth-child(1) {
+                width: 100%;
+                transform: rotate(-45deg) translateY(10px) translateX(2px);
+            }
+
+            &:nth-child(3) {
+                width: 100%;
+                transform: rotate(45deg) translateY(-15px) translateX(-3px);
+            }
+        }
     }
 
     .nav-mobile {
@@ -277,7 +303,9 @@ header {
             background: color(--bg-primary-color);
             flex-direction: column;
             padding: 1.2rem 0;
+            transform: translateX(-200%);
             display: none;
+            transition: all .3s ease-in-out;
 
             .megatext {
                 width: 100%;
@@ -330,7 +358,10 @@ header {
                     }
                 }
             }
+
         }
+
+
 
         &__bottom {
             position: fixed;
@@ -375,6 +406,7 @@ header {
 
     .nav-mobile.active {
         .nav-mobile__top {
+            transform: translateY(0);
             display: block;
         }
     }

@@ -84,11 +84,11 @@
         .container {
             flex-direction: column;
 
-            .autoparts-title {
+            .slideshow-wrapper {
                 width: 100%;
             }
 
-            .slideshow-wrapper {
+            .autoparts-title {
                 width: 100%;
             }
         }
@@ -284,7 +284,12 @@
                 }
             }
         }
+    }
 
+    #autoparts-section {
+        #swiper-btn {
+            background: transparent;
+        }
     }
 }
 

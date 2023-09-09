@@ -150,3 +150,11 @@
     </div>
 
 </header>
+<script>
+    const navBtn = document.querySelector('.mobile-nav-btn');
+    const navigationBar = document.querySelector('.nav-mobile');
+    navBtn.addEventListener('click', () => {
+        navBtn.classList.toggle('active');
+        navigationBar.classList.toggle('active');
+    })
+</script>
