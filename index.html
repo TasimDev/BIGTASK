@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Style.css-->
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./frontend/assets/styles/style.css">
     <!--JQueery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--Bootstrap-->
@@ -16,13 +16,170 @@
 </head>
 
 <body>
-    <Navbar></Navbar>
+    <!--NAVBAR-->
+   
+    <header>
+        <nav class="nav">
+            <div class="container nav__container flex">
+                <div class="nav__title flex">
+                    <div class="logo flex">
+                        <img src="./frontend/assets/images/header-images/Megaparts-Logo-Light-Large.svg"
+                            alt="megaparts/logo">
+                    </div>
+                    <div class="nav__line"></div>
+                    <div class="megatext flex">
+                        <div class="mega megacars">
+                            <h2><span>mega</span>cars</h2>
+                        </div>
+                        <div class="mega megad">
+                            <h2><span>mega</span>обяви</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__frame flex">
+                    <div class="icons flex">
+                        <div class="icon">
+                            <a href="#"><img src="./frontend/assets/images/header-images/message-icon.svg"
+                                    alt="message/icon"></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><img src="./frontend/assets/images/header-images/cart-icon.svg"
+                                    alt="cart/icon"></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><img src="./frontend/assets/images/header-images/likes-icon.svg"
+                                    alt="likes/icon"></a>
+                        </div>
+                    </div>
+                    <div class="nav__line"></div>
+                    <div class="profile">
+                        <a href="./pages/login-form.html" class="flex"><img
+                                src="./frontend/assets/images/header-images/profile.svg" alt="profile/svg"><span
+                                class="text">ВХОД</span></a>
+                    </div>
+                    <div class="nav__line"></div>
+                    <div class="socials flex">
+                        <a href="#"><img src="./frontend/assets/images/header-images/youtube.svg" alt="youtube/svg"
+                                class="youtube"></a>
+                        <a href="#"><img src="./frontend/assets/images/header-images/facebook.svg" alt="facebook/svg"
+                                class="facebook"></a>
+                    </div>
+                    <div class="nav__line"></div>
+                    <div class="phone">
+                        <a href="tel:02 437 32 48" class="flex"><img
+                                src="./frontend/assets/images/header-images/phone.svg" alt="phone/svg"><span
+                                class="text">02 437 32 48</span></a>
+                    </div>
+                </div>
+                <!--MOBILE NAVBAR-->
+                <div class="mobile-nav-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </nav>
+        <!--MOBILE NAVBAR-->
+        <div class="nav-mobile">
+            <div class="nav-mobile__top flex">
+                <div class="megatext flex">
+                    <div class="mega megacars">
+                        <h2><span>mega</span>cars</h2>
+                    </div>
+                    <div class="mega megad">
+                        <h2><span>мега</span>обяви</h2>
+                    </div>
+                </div>
+                <div class="megasocials flex">
+                    <div class="socials flex">
+                        <a href="#"><img src="./frontend/assets/images/header-images/youtube.svg" alt="youtube/svg"
+                                class="youtube"></a>
+                        <a href="#"><img src="./frontend/assets/images/header-images/facebook.svg" alt="facebook/svg"
+                                class="facebook"></a>
+                    </div>
+                    <div class="nav__line"></div>
+                    <div class="phone">
+                        <a href="tel:02 437 32 48" class="flex"><img
+                                src="./frontend/assets/images/header-images/phone.svg" alt="phone/svg"><span
+                                class="text">02 437 32 48</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-mobile__bottom">
+
+                <ul class="icons flex">
+                    <li id="profile"><a href="#"><img src="./frontend/assets/images/header-images/profile-mobile.svg"
+                                alt="profile-mobile/svg"></a></li>
+
+                    <li id="message"><a href="#"><img
+                                src="./frontend/assets/images/header-images/message-icon-mobile.svg"
+                                alt="message-mobile/svg"></a></li>
+
+                    <li id="likes"><a href="#"><img src="./frontend/assets/images/header-images/heart-mobile.svg"
+                                alt="heart-mobile/svg"></a></li>
+
+                    <li id="cart"><a href="#"><img src="./frontend/assets/images/header-images/cart-mobile.svg"
+                                alt="cart-mobile/svg"></a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <div class="container nav-bottom__container">
+                <div class="arrow arrow-left"><img src="./frontend/assets/images/header-images/arrow-header.svg"
+                        alt="arrow/svg">
+                </div>
+                <ul class="nav-bottom-menu flex">
+                    <li><a href="#" class=" btn flex" id="home"><img
+                                src="./frontend/assets/images/header-images/home-menu.svg" alt="home/svg"></a></li>
+                    <li><a href="#" class=" btn flex" id="autoparts"><img
+                                src="./frontend/assets/images/header-images/autoparts-menu.svg" alt="autoparts/svg">
+                            <span class="text">АВТОЧАСТИ</span></a>
+                    </li>
+                    <li><a href="#" class=" btn flex" id="partexchange"><img
+                                src="./frontend/assets/images/header-images/parts-exchange-menu.svg"
+                                alt="partExchange/svg">
+                            <span class="text">Борса части</span></a>
+                    </li>
+                    <li><a href="#" class=" btn flex" id="autoborsa"><img
+                                src="./frontend/assets/images/header-images/autoborsa-menu.svg" alt="autoborsa/svg">
+                            <span class="text">Авто борса</span></a>
+                    </li>
+                    <li><a href="#" class=" btn flex" id="sellcars"><img
+                                src="./frontend/assets/images/header-images/sellcars-menu.svg" alt="sellCars/svg">
+                            <span class="text">Продава коли</span></a>
+                    </li>
+                    <li><a href="#" class=" btn flex" id="sellparts"><img
+                                src="./frontend/assets/images/header-images/sellparts-menu.svg" alt="sellparts/svg">
+                            <span class="text">Продава части</span></a>
+                    </li>
+                    <li><a href="#" class=" btn flex" id="games"><img
+                                src="./frontend/assets/images/header-images/game-menu.svg" alt="game/svg">
+                            <span class="text">игри</span></a>
+                    </li>
+                    <li><a href="#" class=" btn flex" id="insurance"><img
+                                src="./frontend/assets/images/header-images/healtcare-menu.svg" alt="insurance/svg">
+                            <span class="text">застраховка</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <script>
+        const navBtn = document.querySelector('.mobile-nav-btn');
+        const navigationBar = document.querySelector('.nav-mobile');
+        navBtn.addEventListener('click', () => {
+            navBtn.classList.toggle('active');
+            navigationBar.classList.toggle('active');
+        })
+    </script>
     <!--SERACH-->
     <section id="search">
         <div class="container">
             <div class="wrapper">
                 <div class="search__title flex">
-                    <div class="icon"><img src="../frontend/assets/images/search-images/search-icon.svg"
+                    <div class="icon"><img src="./frontend/assets/images/search-images/search-icon.svg"
                             alt="search/svg"></div>
                     <span class="text">Бързо търсене</span>
                 </div>
@@ -32,7 +189,7 @@
                         placeholder="Търсете на Част, марка, категория, обява или др.">
                     <div class="buttons flex">
                         <div class="filters-btn">
-                            <img src="../frontend/assets/images/search-images/filter-icon.svg" alt="filte/svf">
+                            <img src="./frontend/assets/images/search-images/filter-icon.svg" alt="filte/svf">
                         </div>
                         <button type="submit" class="search-btn">Търсене</button>
                     </div>
@@ -53,16 +210,16 @@
         <div class="swiper mySwiper" id="swiper-image">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                    <img src="./frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                    <img src="./frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                    <img src="./frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
+                    <img src="./frontend/assets/images/slides-images/Rectangle 100.png" alt="rectangle/img">
                 </div>
             </div>
             <div class="swiper-pagination" id="swiper-pagination-image"></div>
@@ -73,7 +230,7 @@
     <div id="info">
         <div class="container info-container ">
             <div class="info-item">
-                <div class="image"><img src="../frontend/assets/images/info-images/info-image-1.svg" alt="info-image-1"
+                <div class="image"><img src="./frontend/assets/images/info-images/info-image-1.svg" alt="info-image-1"
                         class="info-image"></div>
                 <div class="info-text">
                     <div class="title">Експресна доставка</div>
@@ -81,7 +238,7 @@
                 </div>
             </div>
             <div class="info-item">
-                <div class="image"><img src="../frontend/assets/images/info-images/info-image-2.svg" alt="info-image-2"
+                <div class="image"><img src="./frontend/assets/images/info-images/info-image-2.svg" alt="info-image-2"
                         class="info-image"></div>
                 <div class="info-text">
                     <div class="title">Нови части всеки ден</div>
@@ -89,7 +246,7 @@
                 </div>
             </div>
             <div class="info-item">
-                <div class="image"><img src="../frontend/assets/images/info-images/info-image-3.svg" alt="info-image-3"
+                <div class="image"><img src="./frontend/assets/images/info-images/info-image-3.svg" alt="info-image-3"
                         class="info-image"></div>
                 <div class="info-text">
                     <div class="title">Проверено качество</div>
@@ -97,7 +254,7 @@
                 </div>
             </div>
             <div class="info-item">
-                <div class="image"><img src="../frontend/assets/images/info-images/info-image-4.svg" alt="info-image-4"
+                <div class="image"><img src="./frontend/assets/images/info-images/info-image-4.svg" alt="info-image-4"
                         class="info-image"></div>
                 <div class="info-text">
                     <div class="title">Право на връщане</div>
@@ -110,13 +267,13 @@
         <div class="container flex">
             <div class="autoparts-title">
                 <div class="title">
-                    <img src="../frontend/assets/images/autoparts-section-images/title-image.svg"
+                    <img src="./frontend/assets/images/autoparts-section-images/title-image.svg"
                         alt="autoparts-title/svg">
                     <span class="text">Авточасти</span>
                 </div>
                 <p class="info">Най-големия онлайн магазин за авточасти в България!</p>
                 <a href="#">
-                    <img src="../frontend/assets/images/autoparts-section-images/right-vector.svg" alt="">
+                    <img src="./frontend/assets/images/autoparts-section-images/right-vector.svg" alt="">
                     <span class="text">Разгледай</span>
                 </a>
             </div>
@@ -127,7 +284,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                    <img src="./frontend/assets/images/autoparts-section-images/image 2.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -144,7 +301,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                    <img src="./frontend/assets/images/autoparts-section-images/image 2.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -161,7 +318,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                    <img src="./frontend/assets/images/autoparts-section-images/image 2.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -178,7 +335,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                    <img src="./frontend/assets/images/autoparts-section-images/image 2.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -195,7 +352,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                    <img src="./frontend/assets/images/autoparts-section-images/image 2.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -212,7 +369,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoparts-section-images/image 2.png"
+                                    <img src="./frontend/assets/images/autoparts-section-images/image 2.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -244,13 +401,13 @@
         <div class="container flex">
             <div class="autoborsa-title">
                 <div class="title">
-                    <img src="../frontend/assets/images/autoborsa-section-images/autoborsa-icon.svg"
+                    <img src="./frontend/assets/images/autoborsa-section-images/autoborsa-icon.svg"
                         alt="autoborsa-title/svg">
                     <span class="text">Борса части</span>
                 </div>
                 <p class="info">Най-голямата борса за авточасти в България!</p>
                 <a href="#">
-                    <img src="../frontend/assets/images/autoborsa-section-images/right-arrow.svg" alt="">
+                    <img src="./frontend/assets/images/autoborsa-section-images/right-arrow.svg" alt="">
                     <span class="text">Разгледай</span>
                 </a>
             </div>
@@ -261,7 +418,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                    <img src="./frontend/assets/images/autoborsa-section-images/image 3.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -278,7 +435,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                    <img src="./frontend/assets/images/autoborsa-section-images/image 3.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -295,7 +452,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                    <img src="./frontend/assets/images/autoborsa-section-images/image 3.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -312,7 +469,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                    <img src="./frontend/assets/images/autoborsa-section-images/image 3.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -329,7 +486,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                    <img src="./frontend/assets/images/autoborsa-section-images/image 3.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -346,7 +503,7 @@
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="image">
-                                    <img src="../frontend/assets/images/autoborsa-section-images/image 3.png"
+                                    <img src="./frontend/assets/images/autoborsa-section-images/image 3.png"
                                         alt="imag-1/png">
                                 </div>
                                 <div class="product-info">
@@ -372,8 +529,7 @@
                 <div class="service service-1">
                     <div class="service-title">
                         <div class="title">
-                            <img src="../frontend/assets/images/services-images/logos/service-1.svg"
-                                alt="service-1/svg">
+                            <img src="./frontend/assets/images/services-images/logos/service-1.svg" alt="service-1/svg">
                             <span class="text">Автоборса</span>
                         </div>
                         <p class="info">Залагане, търгуване и продаване на автомобили.</p>
@@ -386,14 +542,13 @@
                 <div class="service service-2">
                     <div class="service-title">
                         <div class="title">
-                            <img src="../frontend/assets/images/services-images/logos/service-2.svg"
-                                alt="service-2/svg">
+                            <img src="./frontend/assets/images/services-images/logos/service-2.svg" alt="service-2/svg">
                             <span class="text">Продава коли</span>
                         </div>
                         <p class="info">Обяви за коли. Част от <span class="text">MEGACARS</span>.</p>
                         <div class="buttons">
                             <a href="#" class="btn">
-                                <img src="../frontend/assets/images/services-images/arrow/arrow-2.svg" alt="arrow/svg">
+                                <img src="./frontend/assets/images/services-images/arrow/arrow-2.svg" alt="arrow/svg">
                                 <span class="text">Разгледай</span>
                             </a>
                             <a href="#" class="small-link">Към MEGACARS <span class="icon">&#8250;</span></a>
@@ -403,14 +558,13 @@
                 <div class="service service-3">
                     <div class="service-title">
                         <div class="title">
-                            <img src="../frontend/assets/images/services-images/logos/service-3.svg"
-                                alt="service-3/svg">
+                            <img src="./frontend/assets/images/services-images/logos/service-3.svg" alt="service-3/svg">
                             <span class="text">Продава части</span>
                         </div>
                         <p class="info">Обяви за части. Част от <span class="text">MEGAОБЯВИ</span>.</p>
                         <div class="buttons">
                             <a href="#" class="btn">
-                                <img src="../frontend/assets/images/services-images/arrow/arrow-3.svg" alt="arrow/svg">
+                                <img src="./frontend/assets/images/services-images/arrow/arrow-3.svg" alt="arrow/svg">
                                 <span class="text">Разгледай</span>
                             </a>
                             <a href="#" class="small-link">Към MEGAОБЯВИ <span class="icon">&#8250;</span></a>
@@ -420,13 +574,12 @@
                 <div class="service service-4">
                     <div class="service-title">
                         <div class="title">
-                            <img src="../frontend/assets/images/services-images/logos/service-4.svg"
-                                alt="service-4/svg">
+                            <img src="./frontend/assets/images/services-images/logos/service-4.svg" alt="service-4/svg">
                             <span class="text">Игри</span>
                         </div>
                         <p class="info">Забавления за ценители.</p>
                         <a href="#" class="btn">
-                            <img src="../frontend/assets/images/services-images/arrow/arrow-4.svg" alt="arrow/svg">
+                            <img src="./frontend/assets/images/services-images/arrow/arrow-4.svg" alt="arrow/svg">
                             <span class="text">Разгледай</span>
                         </a>
 
@@ -439,7 +592,7 @@
                 <div class="service service-1">
                     <div class="service-title">
                         <div class="icon">
-                            <img src="../frontend/assets/images/services-images/service-bottom/service-bottom-1.svg"
+                            <img src="./frontend/assets/images/services-images/service-bottom/service-bottom-1.svg"
                                 alt="">
                         </div>
                         <span class="text">
@@ -453,7 +606,7 @@
                 <div class="service service-2">
                     <div class="service-title">
                         <div class="icon">
-                            <img src="../frontend/assets/images/services-images/service-bottom/service-bottom-2.svg"
+                            <img src="./frontend/assets/images/services-images/service-bottom/service-bottom-2.svg"
                                 alt="">
                         </div>
                         <span class="text">
@@ -467,7 +620,7 @@
                 <div class="service service-3">
                     <div class="service-title">
                         <div class="icon">
-                            <img src="../frontend/assets/images/services-images/service-bottom/service-bottom-3.svg"
+                            <img src="./frontend/assets/images/services-images/service-bottom/service-bottom-3.svg"
                                 alt="">
                         </div>
                         <span class="text">
@@ -481,7 +634,7 @@
                 <div class="service service-4">
                     <div class="service-title">
                         <div class="icon">
-                            <img src="../frontend/assets/images/services-images/service-bottom/service-bottom-4.svg"
+                            <img src="./frontend/assets/images/services-images/service-bottom/service-bottom-4.svg"
                                 alt="">
                         </div>
                         <span class="text">
@@ -508,23 +661,73 @@
     <div id="map">
         <div class="container">
             <div class="image-container">
-                <img src="../frontend/assets/images/map-img/map.svg" alt="map/svg">
+                <img src="./frontend/assets/images/map-img/map.svg" alt="map/svg">
                 <div class="vector-container" id="sofia">
-                    <div class="vector"><img src="../frontend/assets/images/map-img/vector.svg" alt="vector/svg">
+                    <div class="vector"><img src="./frontend/assets/images/map-img/vector.svg" alt="vector/svg">
                     </div>
                 </div>
                 <div class="vector-container" id="varna">
-                    <div class="vector"><img src="../frontend/assets/images/map-img/vector.svg" alt="vector/svg">
+                    <div class="vector"><img src="./frontend/assets/images/map-img/vector.svg" alt="vector/svg">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <Footer></Footer>
+    <!--FOOTER-->
+    <div id="footer">
+        <div class="container">
+            <div class="footer_items item1 ">
+                <div class="list_item">
+                    <h1>Полезно за вас</h1>
+                    <h2>Формуляр за връщане</h2>
+                    <h2>Мнения за <span class="mega_span">MEGAPARTS</span> </h2>
+                    <h2>Регистрирай се за продавач</h2>
+                </div>
+                <div class="button">
+                    <li><a href="#">Онлайн оценка на колата ви</a></li>
+                </div>
+            </div>
+            <div class="footer_items item2">
+                <div class="list_item">
+                    <h1>Онлайн Пазаруване</h1>
+                    <h2>Общи условия на платформата</h2>
+                    <h2>Общи условия на MEGAPARTS Борса</h2>
+                    <h2>Общи условия Вендор</h2>
+                    <h2>Политика за използване на “бисквитки”</h2>
+                    <h2>Политика за защита на лични данни</h2>
+                </div>
+            </div>
+            <div class="footer_items item3">
+                <div class="list_item">
+                    <h1>За нас</h1>
+                    <h2>Представяне</h2>
+                    <h2>Социални мрежи</h2>
+                    <h2>02 437 32 48</h2>
+                    <h2>at@megaparts.bg</h2>
+                </div>
+            </div>
+            <div class="footer_items item4">
+                <div class="list_item">
+                    <div class="list-title">
+                        <img src="./frontend/assets/images/header-images/Megaparts-Logo-Light-Large.svg" alt="">
+                        <span>2023 © MEGAPARTS Marketplace</span>
+                    </div>
+                    <div class="megatext">
+                        <div class="mega megacars">
+                            <h2><span class="text">MEGA</span>CARS</h2>
+                        </div>
+                        <div class="mega megad">
+                            <h2><span class="text">MEGA</span>ОБЯВИ</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Script.js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./assets/js/testominal.js"> </script>
-    <script src="./assets/js/index.js"></script>
+    <script src="./frontend/assets/js/testominal.js"> </script>
+    <script src="./frontend/assets/js/index.js"></script>
 
 </body>
 

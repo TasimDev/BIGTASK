@@ -1,24 +1,3 @@
-fetch('components/header.html')
-    .then(response => response.text())
-    .then(data => {
-        // Inject the HTML content into the container
-        $('Navbar').html(data);
-    });
-fetch('components/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        // Inject the HTML content into the container
-        $('Footer').html(data);
-    });
-
-const dots = document.querySelectorAll('.dot');
-dots.forEach((dot) => {
-    dot.addEventListener('click', () => {
-        let current = document.getElementsByClassName('dot active');
-        current[0].className = current[0].className.replace('active', '');
-        dot.className += ' active';
-    })
-})
 
 
 
@@ -29,7 +8,7 @@ for (let testominal of testominalData) {
     <div class="testominalBox">
         <div class="content-container">
             <div class="quote">
-                <img src="../frontend/assets/images/testominals-images/quote.svg" alt="quote/svg">
+                <img src="./frontend/assets/images/testominals-images/quote.svg" alt="quote-svg">
             </div>
             <div class="content">
                 ${testominal.content}
@@ -43,11 +22,11 @@ for (let testominal of testominalData) {
             <div class="profile-info">
                 <span class="name">${testominal.name}</span>
                 <span class="stars">
-                    <img src="../frontend/assets/images/testominals-images/star.svg" alt="">
-                    <img src="../frontend/assets/images/testominals-images/star.svg" alt="">
-                    <img src="../frontend/assets/images/testominals-images/star.svg" alt="">
-                    <img src="../frontend/assets/images/testominals-images/star.svg" alt="">
-                    <img src="../frontend/assets/images/testominals-images/star.svg" alt="">
+                    <img src="./frontend/assets/images/testominals-images/star.svg" alt="">
+                    <img src="./frontend/assets/images/testominals-images/star.svg" alt="">
+                    <img src="./frontend/assets/images/testominals-images/star.svg" alt="">
+                    <img src="./frontend/assets/images/testominals-images/star.svg" alt="">
+                    <img src="./frontend/assets/images/testominals-images/star.svg" alt="">
                 </span>
             </div>
         </div>
