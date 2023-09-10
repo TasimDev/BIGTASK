@@ -1,6 +1,4 @@
 
-
-
 /*Testominal Swipper */
 var swiperWrapper = document.querySelector('#swaper-wrapper-testominals');
 for (let testominal of testominalData) {
