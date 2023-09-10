@@ -718,6 +718,16 @@ header .nav-mobile.active .nav-mobile__top {
   font-size: 0.913rem;
   font-weight: 700;
 }
+#autoborsa-section .container .slideshow-wrapper .swiper-wrapper .swiper-slide .product .product-name h2 span.product-type {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+#autoborsa-section .container .slideshow-wrapper .swiper-wrapper .swiper-slide .product .product-name h2 span.product-type.product-buy {
+  color: #5FB865;
+}
+#autoborsa-section .container .slideshow-wrapper .swiper-wrapper .swiper-slide .product .product-name h2 span.product-type.product-sudjestion {
+  color: #008AEE;
+}
 #autoborsa-section .container .slideshow-wrapper .swiper-wrapper .swiper-slide .product .product-price {
   justify-content: space-between;
 }

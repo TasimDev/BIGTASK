@@ -97,9 +97,23 @@
 
                         .product-name {
                             h2 {
+
                                 color: color(--bg-primary-color);
                                 font-size: 0.913rem;
                                 font-weight: 700;
+
+                                span.product-type {
+                                    text-transform: uppercase;
+                                    font-weight: bolder;
+
+                                    &.product-buy {
+                                        color: color(--green);
+                                    }
+
+                                    &.product-sudjestion {
+                                        color: color(--primary-color);
+                                    }
+                                }
                             }
                         }
 
