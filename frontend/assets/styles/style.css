@@ -1485,4 +1485,82 @@ button:hover {
   pointer-events: none;
 }
 
-/*===========Dashboard=============*//*# sourceMappingURL=style.css.map */
+/*===========Dashboard=============*/
+.dashboard {
+  background-color: #19242D;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 6rem;
+}
+.dashboard .container .header h1 {
+  padding-top: 1.2em;
+  font-size: 3em;
+  color: white;
+}
+.dashboard .container .products_container {
+  width: 100%;
+  margin-top: 50px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+.dashboard .container .products_container .product_header_list {
+  width: 100%;
+}
+.dashboard .container .products_container .product_header_list #add {
+  border: 2px solid #53c79c;
+  border-radius: 0px;
+  background-color: #E4F9F1;
+  color: #53c79c;
+}
+.dashboard .container .products_container .product_table {
+  width: 100%;
+}
+.dashboard .container .products_container .product_table table {
+  margin-top: 15px;
+}
+.dashboard .container .products_container .product_table table thead {
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #708697;
+}
+.dashboard .container .products_container .product_table table thead tr th {
+  padding: 10px 15px;
+  width: 500px;
+}
+.dashboard .container .products_container .product_table table tbody tr #product_img img {
+  width: 150px;
+}
+.dashboard .container .products_container .product_table table tbody tr td {
+  text-align: center;
+}
+.dashboard .container .products_container .product_table table tbody tr td #buyer {
+  color: #5FB865;
+  margin-right: 25px;
+  padding: 2px;
+}
+.dashboard .container .products_container .product_table table tbody tr td #buyer:hover {
+  border: 2px solid #5FB865;
+}
+.dashboard .container .products_container .product_table table tbody tr td #for_offerts {
+  color: #008AEE;
+  padding: 2px;
+}
+.dashboard .container .products_container .product_table table tbody tr td #for_offerts:hover {
+  border: 2px solid #008AEE;
+}
+.dashboard .container .products_container .product_table table tbody tr td #edit {
+  color: #708697;
+  margin-right: 30px;
+}
+.dashboard .container .products_container .product_table table tbody tr td #edit:hover {
+  font-size: 1.25em;
+  color: rgb(83, 83, 83);
+}
+.dashboard .container .products_container .product_table table tbody tr td #delete {
+  color: #FFA2A2;
+}
+.dashboard .container .products_container .product_table table tbody tr td #delete:hover {
+  font-size: 1.25em;
+  color: red;
+}/*# sourceMappingURL=style.css.map */

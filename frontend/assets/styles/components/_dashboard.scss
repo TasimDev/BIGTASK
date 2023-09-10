@@ -1,1 +1,116 @@
 /*===========Dashboard=============*/
+.dashboard {
+    background-color: color(--bg-primary-color);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 6rem;
+
+    .container {
+
+
+        .header {
+            h1 {
+                padding-top: 1.2em;
+                font-size: 3em;
+                color: white;
+            }
+        }
+
+        .products_container {
+            width: 100%;
+            margin-top: 50px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+
+            .product_header_list {
+                width: 100%;
+
+                #add {
+                    border: 2px solid #53c79c;
+                    border-radius: 0px;
+                    background-color: #E4F9F1;
+                    color: #53c79c;
+                }
+            }
+
+            .product_table {
+                width: 100%;
+
+                table {
+                    margin-top: 15px;
+
+                    thead {
+                        width: 100%;
+                        background-color: #F4F4F4;
+                        color: #708697;
+
+                        tr {
+
+
+                            th {
+                                padding: 10px 15px;
+                                width: 500px;
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            #product_img {
+                                img {
+                                    width: 150px;
+                                }
+                            }
+
+                            td {
+                                text-align: center;
+
+                                #buyer {
+                                    color: color(--green);
+                                    margin-right: 25px;
+                                    padding: 2px;
+
+                                    &:hover {
+                                        border: 2px solid color(--green);
+                                    }
+                                }
+
+                                #for_offerts {
+                                    color: color(--primary-color);
+                                    padding: 2px;
+
+                                    &:hover {
+                                        border: 2px solid color(--primary-color);
+                                    }
+                                }
+
+                                #edit {
+                                    color: #708697;
+                                    margin-right: 30px;
+
+                                    &:hover {
+                                        font-size: 1.25em;
+                                        color: rgb(83, 83, 83);
+                                    }
+                                }
+
+                                #delete {
+
+
+                                    color: #FFA2A2;
+
+                                    &:hover {
+                                        font-size: 1.25em;
+                                        color: red;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
