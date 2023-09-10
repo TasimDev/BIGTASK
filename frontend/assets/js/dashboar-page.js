@@ -17,13 +17,4 @@ function toasterShow() {
         progress.classList.remove("active");
     }, 5300);
 }
-closeIcon.addEventListener("click", () => {
-    toast.classList.remove("active");
-
-    setTimeout(() => {
-        progress.classList.remove("active");
-    }, 300);
-
-    clearTimeout(timer1);
-    clearTimeout(timer2);
-});
+toasterShow();

@@ -14,7 +14,7 @@ class Util
     //MEthod to displaying message
     public function showMessage($type, $message)
     {
-        return `   <div class="toast">
+        return `<div class="toast">
                      <div class="toast-content">
                         <i class="fas fa-solid fa-check check"></i>
 
@@ -23,10 +23,8 @@ class Util
                             <span class="text text-2">'.$message.'</span>
                          </div>
                         </div>
-                    <i class="fa-solid fa-xmark close"></i>
-
-                 <div class="progress"></div>
-            </div>`;
+                    <div class="progress"></div>
+                </div>`;
     }
 }
 ?>
