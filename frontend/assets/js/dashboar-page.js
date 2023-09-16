@@ -1,20 +1,39 @@
-const button = document.querySelector("button"),
-    toast = document.querySelector(".toast")
-closeIcon = document.querySelector(".close"),
-    progress = document.querySelector(".progress");
+const addBtn = document.querySelector('#add-btn');
+const closeBtn = document.querySelector('#close-btn');
+const addProductForm = document.querySelector('#add-product-form');
 
-let timer1, timer2;
+addBtn.addEventListener('click', () => {
+    addProductForm.style.display = "flex";
+})
+closeBtn.addEventListener('click', () => {
+    addProductForm.style.display = "none";
+})
 
-function toasterShow() {
-    toast.classList.add("active");
-    progress.classList.add("active");
+//CRUD API
 
-    timer1 = setTimeout(() => {
-        toast.classList.remove("active");
-    }, 5000); //1s = 1000 milliseconds
+//Add New User Ajax Requesr
 
-    timer2 = setTimeout(() => {
-        progress.classList.remove("active");
-    }, 5300);
-}
-toasterShow();
+addProductForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(addProductForm);
+
+    formData.append('add', 1);
+
+    if (addProductForm.checkValidty() === false) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+    } else {
+        document.getElementById('#submit-btn').textContent = 'Please Wait....';
+
+        const data = await fetch('action.php', {
+            method: 'POST',
+            body: formData,
+        });
+
+        const response = await data.text();
+        console.log(response);
+        
+    }
+
+})

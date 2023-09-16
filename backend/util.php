@@ -14,17 +14,12 @@ class Util
     //MEthod to displaying message
     public function showMessage($type, $message)
     {
-        return `<div class="toast">
-                     <div class="toast-content">
-                        <i class="fas fa-solid fa-check check"></i>
-
-                         <div class="message">
-                            <span class="text text-1">'.$type.'</span>
-                            <span class="text text-2">'.$message.'</span>
-                         </div>
-                        </div>
-                    <div class="progress"></div>
-                </div>`;
+        return '<div class="message message-' . $type . '">
+                    <div class="icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <div class="text">' . $message . '</div>
+                </div>';
     }
 }
 ?>

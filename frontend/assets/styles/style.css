@@ -1372,100 +1372,89 @@ header .nav-mobile.active .nav-mobile__top {
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
-.toast {
-  position: absolute;
-  top: 25px;
-  right: 30px;
-  border-radius: 12px;
-  background: #fff;
-  padding: 20px 35px 20px 25px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  border-left: 6px solid #4070f4;
-  overflow: hidden;
-  transform: translateX(calc(100% + 30px));
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+/*===========Dashboard=============*/
+.dashboard {
+  width: 100%;
+  height: 100vh;
+  background: #F3F5F9;
+  padding: 1.3rem;
 }
-
-.toast.active {
-  transform: translateX(0%);
-}
-
-.toast .toast-content {
+.dashboard__header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
-
-.toast-content .check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 35px;
-  width: 35px;
-  background-color: #4070f4;
+.dashboard__header h1 {
+  color: #32383D;
+}
+.dashboard__header .btn {
+  padding: 0.6rem 1rem;
+  background: #32383D;
   color: #fff;
-  font-size: 20px;
-  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid #32383D;
+  border-radius: 6px;
+  box-shadow: 2px 3px 12px #ced0d3;
 }
-
-.toast-content .message {
+.dashboard #add-product-form {
+  margin-bottom: 13px;
+  padding: 13px;
+  background: #fff;
+  border: 3px solid #fff;
+  border-radius: 6px;
+  box-shadow: 2px 3px 12px #ced0d3;
+  gap: 13px;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  display: none;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+}
+.dashboard #add-product-form .icon-x {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.dashboard #add-product-form .form-item {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  gap: 6.5px;
 }
-
-.message .text {
-  font-size: 20px;
-  font-weight: 400;
-  color: #666666;
+.dashboard #add-product-form input,
+.dashboard #add-product-form textarea {
+  border: 1px solid rgb(219, 219, 219);
+  padding: 6px;
+  border-radius: 6px;
+  outline: none;
+  resize: none;
 }
-
-.message .text.text-1 {
-  font-weight: 600;
-  color: #333;
+.dashboard #add-product-form .product-info {
+  display: flex;
+  gap: 13px;
 }
-
-.toast .close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  padding: 5px;
-  cursor: pointer;
-  opacity: 0.7;
+.dashboard #add-product-form .product-info #product-name {
+  padding: 9px;
 }
-
-.toast .close:hover {
-  opacity: 1;
+.dashboard #add-product-form .form-item.price {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
 }
-
-.toast .progress {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  background: #ddd;
+.dashboard #add-product-form .info .type {
+  display: flex;
+  gap: 10px;
 }
-
-.toast .progress:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #4070f4;
+.dashboard #add-product-form .buttons #reset-btn {
+  background: #DC5426;
 }
-
-.progress.active:before {
-  animation: progress 5s linear forwards;
+.dashboard #add-product-form .buttons #submit-btn {
+  background: #5FB865;
 }
-
-@keyframes progress {
-  100% {
-    right: 100%;
-  }
-}
-button {
+.dashboard #add-product-form button {
   padding: 12px 20px;
   font-size: 20px;
   outline: none;
@@ -1476,13 +1465,112 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
-
-button:hover {
+.dashboard #add-product-form button:hover {
   background-color: #0e4bf1;
 }
-
-.toast.active ~ button {
-  pointer-events: none;
+.dashboard .message {
+  display: flex;
+  padding: 9px;
+  width: 100%;
+  border-radius: 6px;
+  align-items: center;
+  gap: 4.5px;
+  margin-bottom: 18px;
 }
-
-/*===========Dashboard=============*//*# sourceMappingURL=style.css.map */
+.dashboard .message .text {
+  font-size: 1rem;
+}
+.dashboard .message.message-success {
+  background: rgb(158, 223, 158);
+}
+.dashboard .message.message-success .icon {
+  color: green;
+}
+.dashboard .message.message-success .text {
+  color: green;
+}
+.dashboard .message.message-error {
+  background: rgb(223, 158, 158);
+}
+.dashboard .message.message-error .icon {
+  color: rgb(128, 0, 0);
+}
+.dashboard .message.message-error .text {
+  color: rgb(128, 0, 0);
+}
+.dashboard table {
+  width: 100%;
+  table-layout: fixed;
+}
+.dashboard .tbl-header {
+  background-color: rgba(194, 194, 194, 0.3);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.dashboard .tbl-content {
+  height: 400px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(194, 194, 194, 0.3);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #fff;
+}
+.dashboard th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #32383D;
+  text-transform: uppercase;
+}
+.dashboard th:first-child {
+  width: 6px;
+}
+.dashboard td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  border-bottom: 1px solid rgba(194, 194, 194, 0.3);
+}
+.dashboard td img {
+  width: 100px;
+  height: auto;
+}
+.dashboard td:first-child {
+  width: 6px;
+}
+.dashboard td i {
+  background: rgba(194, 194, 194, 0.3);
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+.dashboard td i#edit-btn {
+  background: #E59D48;
+}
+.dashboard td i#delete-btn {
+  background: #DC5426;
+}
+.dashboard td#sell {
+  color: #008AEE;
+  font-weight: 600;
+}
+.dashboard td#buy {
+  color: #5FB865;
+  font-weight: 600;
+}
+.dashboard ::-webkit-scrollbar {
+  width: 6px;
+}
+.dashboard ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.dashboard ::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=style.css.map */
