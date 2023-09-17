@@ -19,21 +19,21 @@ addProductForm.addEventListener('submit', async (e) => {
 
     formData.append('add', 1);
 
-    if (addProductForm.checkValidty() === false) {
+    if (addProductForm.checkValidity() === false) {
         e.preventDefault();
         e.stopPropagation();
         return false;
     } else {
-        document.getElementById('#submit-btn').textContent = 'Please Wait....';
 
-        const data = await fetch('action.php', {
+
+        const data = await fetch('backend/action.php', {
             method: 'POST',
             body: formData,
         });
 
         const response = await data.text();
         console.log(response);
-        
+
     }
 
 })
